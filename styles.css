@@ -5,7 +5,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-size: 16px;
   font-family: "Outfit", sans-serif;
   text-align: left;
 }
@@ -36,6 +35,9 @@ body {
   align-items: center;
   flex-direction: column;
   font-size: 16px;
+  color: var(--Stone-600);
+  font-weight: var(--font-weight-regular);
+  font-size: 9px;
 }
 
 .container {
@@ -61,14 +63,118 @@ body {
 }
 
 .container p {
-  font-weight: var(--font-weight-regular);
-  font-size: 9px;
   margin: auto auto 15px;
-  color: var(--Stone-600);
 }
 
 .container-pink {
   padding: 20px;
   background-color: var(--Rose-50);
-  border-radius: 15px;
+  border-radius: 10px;
+}
+
+.container-pink ul {
+  margin: auto 10px;
+}
+
+h3 {
+  font-weight: var(--font-weight-semibold);
+  font-size: 15px;
+  color: var(--Rose-800);
+  padding-bottom: 10px;
+}
+
+ul li {
+  text-indent: 10px;
+  padding: 3px;
+}
+
+h2 {
+  font-weight: var(--font-YoungTitle);
+  color: var(--Brown-800);
+  margin: 15px auto;
+  font-family: "Young Serif";
+  font-size: 18px;
+}
+
+ul {
+  margin: auto 15px;
+}
+
+.divisor {
+  margin: 20px auto;
+  height: 1px;
+  background-color: var(--Stone-150);
+  border: 0px;
+}
+
+ol li::marker {
+  color: var(--Brown-800);
+  font-weight: var(--font-weight-bold);
+}
+
+ol li {
+  text-indent: 10px;
+}
+
+ol {
+  padding: 0 15px;
+}
+
+table {
+  width: 100%;
+  border-top: none;
+  border-bottom: none;
+  border-collapse: collapse;
+}
+
+.col1 {
+  font-weight: var(--font-weight-regular);
+}
+
+.col2 {
+  font-weight: var(--font-weight-semibold);
+  color: var(--Brown-800);
+}
+
+th,
+td {
+  border-bottom: 1px solid var(--Stone-150);
+  padding: 8px;
+}
+
+th,
+td {
+  border-left: none;
+  border-right: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--Brown-800);
+}
+
+.attribution {
+  padding-bottom: 20px;
+}
+
+@media (max-width: 374px) {
+  body {
+    background-color: var(--White);
+    padding: 0;
+    margin: 0;
+  }
+
+  .container {
+    padding: 0 20px;
+    margin: 0;
+    border-radius: 0;
+    position: relative;
+  }
+
+  .container img {
+    border-radius: 0;
+    padding: 0;
+    width: 100%;
+    margin: auto 20px;
+  }
 }
