@@ -6,6 +6,8 @@
   margin: 0;
   padding: 0;
   font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  text-align: left;
 }
 
 :root {
@@ -25,4 +27,48 @@
   --font-weight-regular: 400;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
+}
+
+body {
+  background-color: var(--Stone-100);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 375px;
+  margin: 50px auto;
+  background-color: var(--White);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.container img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.title {
+  font-family: "Young Serif";
+  margin: 15px auto;
+  font-weight: var(--font-YoungTitle);
+  font-size: 22px;
+  color: var(--Stone-900);
+}
+
+.container p {
+  font-weight: var(--font-weight-regular);
+  font-size: 9px;
+  margin: auto auto 15px;
+  color: var(--Stone-600);
+}
+
+.container-pink {
+  padding: 20px;
+  background-color: var(--Rose-50);
+  border-radius: 15px;
 }
